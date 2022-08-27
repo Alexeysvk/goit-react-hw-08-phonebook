@@ -1,0 +1,30 @@
+.user__menu {
+    display: flex;
+    align-items: center;
+}
+
+.welcome__user {
+    font-size: 20px;
+    font-weight: 700;
+    color: #212121;
+    margin-right: 15px;
+}
+
+.logout__button {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #212121;
+    background-color: #00bfff;
+    transition: background-color 300ms ease, color 300ms ease;
+}
+
+.logout__button:hover,
+.logout__button:focus {
+    background-color: #00bfff;
+    color: #212121;
+}

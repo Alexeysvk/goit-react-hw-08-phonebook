@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Alexeysvk.github.io/goit-react-hw-07-phonebook/",
+  "homepage": "https://Alexeysvk.github.io/goit-react-hw-08-phonebook/",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
@@ -13,13 +13,16 @@
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "nanoid": "^4.0.0",
+    "netlify-cli": "^11.5.0",
     "notiflix": "^3.2.5",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "redux": "^4.2.0",
     "redux-persist": "^6.0.0",
+    "shortid": "^2.2.16",
     "web-vitals": "^2.1.3"
   },
   "scripts": {
@@ -48,4 +51,3 @@
     ]
   }
 }
-

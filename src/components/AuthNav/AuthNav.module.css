@@ -1,0 +1,32 @@
+.auth__nav {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+    transition: color 300ms ease, background-color 300ms ease;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.link a {
+    vertical-align: middle;
+}
+
+.link:first-child {
+    margin-right: 10px;
+}
+
+.link:hover,
+.link:focus {
+    background-color: #19b2e6;
+}
+
+.link.activeLink {
+    background-color: #00bfff;
+}

@@ -4,7 +4,6 @@ import { getFilter } from 'redux/phonebook/selectors';
 import { filterChangeAction } from 'redux/phonebook/actions';
 
 
-
 const Filter = () => {
   const dispatch = useDispatch();
   const value = useSelector(getFilter);

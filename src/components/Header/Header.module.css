@@ -1,0 +1,15 @@
+.header__box {
+    min-width: 75%;
+    background-color: #d1edff;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 20px 30px;
+}
+
+.navigation__box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-width: 90%;
+    justify-items: end;
+}
