@@ -2,7 +2,7 @@ import s from './App.module.css';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import { Suspense, useEffect, lazy } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { refreshCurrentUser } from '../redux/auth/auth-operations';
 import { getIsLoading } from '../redux/auth/auth-selectors';
@@ -41,6 +41,7 @@ const App = () => {
               <Route path="/phonebook" element={<PhonebookPage />} />;
               <Route path="/signIn" element={<SignInPage />} />;
               <Route path="/signUp" element={<SignUpPage />} />;
+              <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </Suspense>
         </main>
