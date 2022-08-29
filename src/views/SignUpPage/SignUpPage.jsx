@@ -41,9 +41,6 @@ export default function SignUpPage() {
   const formSubmit = e => {
     e.preventDefault();
     dispatch(signUp({ email, password, name }));
-    setEmail('');
-    setName('');
-    setPassword('');
   };
 
   return (

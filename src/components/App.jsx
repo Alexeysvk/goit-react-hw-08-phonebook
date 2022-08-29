@@ -6,6 +6,7 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { refreshCurrentUser } from '../redux/auth/auth-operations';
 import { getIsLoading } from '../redux/auth/auth-selectors';
+import { Notify } from 'notiflix';
 
 
 const PhonebookPage = lazy(() =>
@@ -25,11 +26,12 @@ const SignUpPage = lazy(() =>
 const App = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(getIsLoading);
-
+  const error = useSelector(({ auth: {error}}) => error)
   useEffect(() => {
     dispatch(refreshCurrentUser());
   }, [dispatch]);
-
+  
+  error && Notify.failure(error);
   return (
     !isLoading && (
       <div>
