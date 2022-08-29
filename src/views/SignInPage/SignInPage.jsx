@@ -37,8 +37,6 @@ export default function SignInPage() {
   const formSubmit = e => {
     e.preventDefault();
     dispatch(signIn({ email, password }));
-    setEmail('');
-    setPassword('');
   };
 
   return (
